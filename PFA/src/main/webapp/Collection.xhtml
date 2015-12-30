@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+
+<style type="text/css" media="screen">
+tr{
+
+padding: 15px;
+
+}
+</style>
+
+<ui:composition template="/Template.xhtml">
+	<ui:define name="titre">Ajouter Collection</ui:define>
+	<ui:define name="contenu">
+		<section id="page-title">
+		<h1>Ajouter Une Collection</h1>
+		</section>
+		<h:form>
+			<table>
+				<tr>
+					<td><h:outputLabel value="Nom Collection" /></td>
+					<td><h:inputText name="nomCol" /></td>
+				</tr>
+				<tr>
+					<td><h:outputLabel value="Nom nomRealisateur" /></td>
+					<td><h:inputText name="nomReal" /></td>
+				</tr>
+				<tr>
+					<td><h:outputLabel value="Date Realisation" /></td>
+					<td><h:inputText name="dateReal" /></td>
+				</tr>
+				<tr>
+					<td><h:outputLabel value="Valeur Estimee" /></td>
+					<td><h:inputText name="valeurEs" /></td>
+				</tr>
+				<tr>
+					<td><h:outputLabel value="Etat Oeuvre" /></td>
+					<td><h:inputText name="etat" /></td>
+				</tr>
+				<tr>
+					<td><h:outputLabel value="localisation" /></td>
+					<td><h:inputText name="local" /></td>
+				</tr>
+				<tr>
+					<td><h:outputLabel value="Image" /></td>
+				</tr>
+				<tr>
+					<td><h:outputLabel value="largeur" /></td>
+					<td><h:inputText name="largeur" /></td>
+				</tr>
+				<tr>
+					<td><h:outputLabel value="longeur" /></td>
+					<td><h:inputText name="longeur" /></td>
+				</tr>
+				<tr>
+					<td><h:outputLabel value="courant" /></td>
+					<td><h:inputText name="courant" /></td>
+				</tr>
+				<td><h:commandButton value="Ajouter Collection" actionListener="#{manipCollection.AjouterCollection()}" /></td>
+				<td><h:commandButton value="Ajouter Peinture" /></td>
+				<td><h:commandButton value="Sculpture" /></td>
+			</table>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>
